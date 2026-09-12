@@ -89,13 +89,9 @@ Contains our <b>thyroid cancer spatial transcriptomics data for sample M1</b>, w
 
 <h1>🚀 Generating Final Annotation Results</h1>
 
-<p>
-RFGA can be used to generate final spatial annotations using either
-<b>our provided thyroid cancer spatial transcriptomics data</b> or
-<b>the user's own spatial transcriptomics data</b>.
-</p>
+<p> <b>RFGA is used to annotate spatial transcriptomics data.</b> In the following sections, we demonstrate the usage of RFGA using our own thyroid cancer spatial transcriptomics data as an example. We also provide instructions for using RFGA to annotate <b>your own spatial transcriptomics data</b>. </p>
 
-<h2>1. Generating Results Using Our Data</h2>
+<h2>1. Generating annotation for Our Data</h2>
 
 <p>
 The script <code>FinalAnnotationPrediction_OurData.R</code> produces the final annotation of a spatial transcriptomics sample using the RFGA model.
@@ -146,7 +142,7 @@ An image of the spatial sample showing <b>normal spots and the different tumor-s
 
 <hr>
 
-<h2>2. Generating Results Using Your Own Data</h2>
+<h2>2. Generating annotation for Own Data</h2>
 
 <p>
 Users can also run RFGA using their <b>own spatial transcriptomics data</b>.
