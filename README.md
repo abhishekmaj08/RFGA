@@ -1,4 +1,4 @@
-<h1 align="center">🧬 RFGA: Tumor and Molecular Subtype Mapping in Spatial Transcriptomics</h1>
+<h1 align="center"> RFGA: Tumor and Molecular Subtype Mapping in Spatial Transcriptomics</h1>
 
 <p>
 <b>RFGA (Random Forest–Genetic Algorithm)</b> is a robust, generalizable supervised machine-learning framework designed for
@@ -15,12 +15,12 @@ The framework is intended to be <b>expanded to additional cancer types</b> as ap
 pathology information, and cancer-specific molecular features are incorporated.
 </p>
 
-<h2>✨ Highlights</h2>
+<h2> Highlights</h2>
 
 <ul>
-  <li>🔬 <b>Spot-level tumor vs. normal prediction</b></li>
+  <li> <b>Spot-level tumor vs. normal prediction</b></li>
   <li>
-    🗺️ <b>Spatial mapping of PTC thyroid tumor subtypes:</b>
+     <b>Spatial mapping of PTC thyroid tumor subtypes:</b>
     <ul>
       <li>BRAF-like</li>
       <li>RAS-like</li>
@@ -28,14 +28,14 @@ pathology information, and cancer-specific molecular features are incorporated.
       <li>Other subtypes</li>
     </ul>
   </li>
-  <li>📊 <b>Tumor probability and boundary mapping</b></li>
-  <li>🧬 <b>Pathology-guided feature optimization</b></li>
-  <li>🔎 <b>Interpretable gene signatures</b> for downstream biological analysis</li>
+  <li> <b>Tumor probability and boundary mapping</b></li>
+  <li> <b>Pathology-guided feature optimization</b></li>
+  <li> <b>Interpretable gene signatures</b> for downstream biological analysis</li>
 </ul>
 
 <hr>
 
-<h1>📂 Repository Overview</h1>
+<h1> Repository Overview</h1>
 
 <p>
 The RFGA repository is organized into <b>four main directories</b>:
@@ -56,25 +56,25 @@ The RFGA repository is organized into <b>four main directories</b>:
     └── Thyroid cancer spatial transcriptomics data for sample M1
 </code></pre>
 
-<h3>📁 1. <code>Code</code></h3>
+<h3> 1. <code>Code</code></h3>
 
 <p>
 Contains the <b>R scripts</b> used to generate final RFGA annotations and to generate the optimized classification models.
 </p>
 
-<h3>📁 2. <code>GA_Optimized_ClassifierModels</code></h3>
+<h3> 2. <code>GA_Optimized_ClassifierModels</code></h3>
 
 <p>
 Contains the <b>Genetic Algorithm–optimized tumor classifier models</b> used by RFGA.
 </p>
 
-<h3>📁 3. <code>AccessoryFiles</code></h3>
+<h3> 3. <code>AccessoryFiles</code></h3>
 
 <p>
 Contains the <b>files necessary for running the RFGA scripts</b>.
 </p>
 
-<h3>📁 4. <code>SpatialTranscriptomics_Data_M1_Sample</code></h3>
+<h3> 4. <code>SpatialTranscriptomics_Data_M1_Sample</code></h3>
 
 <p>
 Contains our <b>thyroid cancer spatial transcriptomics data for sample M1</b>, which is provided as an example dataset for running RFGA.
@@ -87,7 +87,7 @@ Contains our <b>thyroid cancer spatial transcriptomics data for sample M1</b>, w
 
 <hr>
 
-<h1>🚀 Generating Final Annotation Results</h1>
+<h1> Generating Final Annotation Results</h1>
 
 <p> <b>RFGA is used to annotate spatial transcriptomics data.</b> In the following sections, we demonstrate the usage of RFGA using our own thyroid cancer spatial transcriptomics data as an example. We also provide instructions for using RFGA to annotate <b>your own spatial transcriptomics data</b>. </p>
 
@@ -118,7 +118,7 @@ For this example, use the <code>filtered_feature_bc_matrix.h5</code> file for sa
 <pre><code>Rscript FinalAnnotationPrediction_OurData.R M1
 </code></pre>
 
-<h3>📁 Expected Output</h3>
+<h3> Expected Output</h3>
 
 <p>The analysis generates <b>three output files</b>:</p>
 
@@ -172,7 +172,7 @@ file containing your spatial transcriptomics gene-expression data.
 <pre><code>Rscript FinalAnnotationPrediction_OurData.R YourSampleName
 </code></pre>
 
-<h3>📁 Expected Output</h3>
+<h3> Expected Output</h3>
 
 <p>The analysis generates <b>three output files</b> same as above, but prefixed by your sample name</p>
 
@@ -186,7 +186,7 @@ The current RFGA implementation and classifier models provided in this repositor
 
 <hr>
 
-<h1>🧬 Running the Genetic Algorithm Scripts</h1>
+<h1> Running the Genetic Algorithm Scripts</h1>
 
 <p>
 The repository also provides the Genetic Algorithm (GA) scripts used to generate the optimized RFGA classifier models.
@@ -209,28 +209,28 @@ Run the required R script from the terminal using:
 
 <p>The available GA scripts are:</p>
 
-<h3>🔬 <code>NormalTumor_GA.R</code></h3>
+<h3> <code>NormalTumor_GA.R</code></h3>
 
 <p>
 Runs the <b>Genetic Algorithm</b> to generate the optimized model for classifying
 <b>Normal and Tumor spatial spots</b>.
 </p>
 
-<h3>🧬 <code>BrafModel_GA.R</code></h3>
+<h3> <code>BrafModel_GA.R</code></h3>
 
 <p>
 Runs the <b>Genetic Algorithm</b> to generate the optimized model for classifying
 <b>Normal and BRAF-subtype tumor spatial spots</b>.
 </p>
 
-<h3>🧬 <code>RasModel_GA.R</code></h3>
+<h3> <code>RasModel_GA.R</code></h3>
 
 <p>
 Runs the <b>Genetic Algorithm</b> to generate the optimized model for classifying
 <b>Normal and RAS-subtype tumor spatial spots</b>.
 </p>
 
-<h3>🧬 <code>RETModel_GA.R</code></h3>
+<h3> <code>RETModel_GA.R</code></h3>
 
 <p>
 Runs the <b>Genetic Algorithm</b> to generate the optimized model for classifying
@@ -238,7 +238,7 @@ Runs the <b>Genetic Algorithm</b> to generate the optimized model for classifyin
 </p>
 
 <hr>
-<h2>📚 Cite Our Paper</h2>
+<h2> Cite Our Paper</h2>
 <p> If you use <b>RFGA</b>, its code, models, or associated resources in your research, please cite our paper: </p>
 <blockquote> Abhishek Majumdar, Yanan Song, Yimin Liu, Matthew D. Ringel, Lang Li, Chongwen Dong, Zhongchao Mai, Wei Xia &amp; Lijun Cheng*, <b>RFGA: Integrating Random Forests and Genetic Algorithms for Tumor and Tumor-Subtype Mapping in Spatial Transcriptomics</b>, <i>under review</i>. </blockquote>
 <p> Thank you for supporting our work by citing RFGA in publications and research that use this framework. </p>
