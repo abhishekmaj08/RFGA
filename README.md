@@ -3,8 +3,13 @@ RFGA (Random Forest–Genetic Algorithm) is a supervised machine-learning framew
 
 
 Highlights: 
+
 Spot-level tumor vs. normal prediction
+
 Spatial mapping of PTC thyroid tumor subtypes: BRAF-like, RAS-like, RET-fusion, and other subtypes
+
 Tumor probability and boundary mapping
+
 Pathology-guided feature optimization
+
 Interpretable gene signatures for downstream biological analysis
