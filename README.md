@@ -105,17 +105,14 @@ Place <b>all required files from the <code>Code</code> folder</b> in the same di
 </p>
 
 <p>
-For this example, use the <code>filtered_feature_bc_matrix.h5</code> file for sample <b>M1</b> provided in:
+Use the data in the folder <code>SpatialTranscriptomics_Data_M1_Sample/</code> for our example:
 </p>
-
-<pre><code>SpatialTranscriptomics_Data_M1_Sample/
-</code></pre>
 
 <h3>Step 2 — Run RFGA</h3>
 
 <p>Open a terminal in the directory containing the required files and run:</p>
 
-<pre><code>Rscript FinalAnnotationPrediction_OurData.R M1
+<pre><code>Rscript FinalAnnotationPrediction_OurData.R M1 <b>path_to_</b>SpatialTranscriptomics_Data_M1_Sample<b>_directory</b>
 </code></pre>
 
 <h3> Expected Output</h3>
@@ -155,21 +152,14 @@ Place <b>all required files from the <code>Code</code> folder</b> in the same di
 </p>
 
 <p>
-Instead of the provided M1 data, use your own:
-</p>
-
-<pre><code>filtered_feature_bc_matrix.h5
-</code></pre>
-
-<p>
-file containing your spatial transcriptomics gene-expression data.
+Instead of the provided M1 data, use your own data. Make sure your spatial data contains the .h5 file.
 </p>
 
 <h3>Step 2 — Run RFGA</h3>
 
 <p>Open a terminal in the directory containing the required files and run:</p>
 
-<pre><code>Rscript FinalAnnotationPrediction_OurData.R YourSampleName
+<pre><code>Rscript FinalAnnotationPrediction_OurData.R YourSampleName <b>path_to_</b>Your_Spatial_Sample<b>_directory</b>
 </code></pre>
 
 <h3> Expected Output</h3>
