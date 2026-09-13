@@ -90,6 +90,7 @@ tmp2 = union(tmp,retDEG$deGenes)
 all4DEG = union(tmp2,nvtDEG$deGenes)
 
 sampleName = args[1]
+st_path = args[2]
 sample<-Load10X_Spatial(st_path,filename = "filtered_feature_bc_matrix.h5", assay = "Spatial")
 
 sample <- SCTransform(sample, assay = "Spatial", verbose = FALSE)
